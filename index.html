@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>llms.txt Generator — free, by Clear Cited</title>
+<meta name="description" content="Generate a clean llms.txt for your site in your browser. Free, no signup, no data leaves your machine.">
+<style>*{box-sizing:border-box}
+:root{--bg:#0a0e13;--surface:#11161d;--surface2:#161d27;--line:#1e2630;--ink:#e9eef4;--muted:#94a2b0;--faint:#65727f;--brand:#3b82f6;--brand2:#5c9cff;--ok:#34d399}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+a{color:var(--brand2)}
+header.site,footer.site{border-bottom:1px solid var(--line)}
+footer.site{border-top:1px solid var(--line);border-bottom:0;margin-top:48px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;flex-wrap:wrap}
+.logo{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:19px;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+.logo b{color:var(--brand)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brand2);margin:0 0 10px}
+h1{font-size:clamp(28px,4vw,42px);line-height:1.12;letter-spacing:-.02em;margin:.2em 0}
+h2{font-size:22px;margin:1.4em 0 .4em}
+h3{font-size:16px;margin:0 0 6px}
+.sub,.lead{color:var(--muted);font-size:17px}
+.small{font-size:13px}.muted{color:var(--muted)}.hint{font-size:13px;color:var(--faint);margin-top:8px}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--brand2);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+.k{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;color:var(--brand2)}
+.hero{padding:28px 0 8px}
+section{margin:20px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}
+.grid{display:grid;gap:14px}.grid.three{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.answer,.band{background:var(--surface2);border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:10px;padding:14px 16px;margin:14px 0}
+label{display:block;font-size:13px;color:var(--muted);margin:10px 0 5px}
+input[type=text],input[type=url],input[type=number],textarea,select{width:100%;background:#0b1219;border:1px solid var(--line);border-radius:8px;color:var(--ink);padding:11px 12px;font:inherit}
+textarea{min-height:120px;resize:vertical}
+.field{margin:10px 0}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{display:inline-block;background:var(--brand);color:#fff;border:0;border-radius:8px;padding:11px 18px;font:600 15px/1 inherit;cursor:pointer;text-decoration:none}
+.btn.alt{background:transparent;color:var(--brand2);border:1px solid var(--line)}
+.tabs{display:flex;gap:8px;margin:6px 0 14px;flex-wrap:wrap}
+.tabs button{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;font:inherit}
+.tabs button[aria-selected=true]{color:#fff;background:var(--brand);border-color:var(--brand)}
+.panel{display:none}.panel.on{display:block}
+.status{font-size:13px;color:var(--muted)}
+.pagerow,.faqrow{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:8px;margin:8px 0;align-items:center}
+.faqrow{grid-template-columns:1fr 1fr auto}
+.pagerow .rm,.faqrow .rm{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:8px;width:38px;height:38px;cursor:pointer;font-size:18px}
+#result{width:100%;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;white-space:pre-wrap}
+pre#result{background:#0b1219;border:1px solid var(--line);border-radius:8px;padding:14px;overflow:auto}
+@media (max-width:560px){.pagerow,.faqrow{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap bar"><a class="logo" href="https://clearcited.com/"><svg width="26" height="26" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#3b82f6"/><g fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M41 26 H32 a6 6 0 0 0 -6 6 V68 a6 6 0 0 0 6 6 H41"/><path d="M59 26 H68 a6 6 0 0 1 6 6 V68 a6 6 0 0 1 -6 6 H59"/><path d="M39 52 l6.5 8 L60 42"/></g></svg><span>Clear<b>Cited</b></span></a><a class="btn alt" href="https://clearcited.com/free-teardown/">Free AI-visibility teardown</a></div></header>
+<main class="wrap">
+<div class="hero">
+    <p class="eyebrow">Free tool · no signup · runs in your browser</p>
+    <h1>Free llms.txt generator</h1>
+    <p class="sub">Enter your domain and your most important pages, and get a valid <code class="k">llms.txt</code> you can copy or download — so ChatGPT, Perplexity, Gemini, and Google AI understand and cite your site correctly.</p>
+  </div>
+
+  <section>
+    <h2>What is llms.txt, and why does it matter?</h2>
+    <p class="answer"><strong>llms.txt is a plain Markdown file at your site root (<code class="k">yoursite.com/llms.txt</code>) that tells AI engines what your site is and points to your most important pages.</strong> Just as <code class="k">robots.txt</code> guides crawlers and a sitemap lists every URL, <code class="k">llms.txt</code> gives AI answer engines a clean, curated map of your best content plus a one-line description of your entity. That makes you easier to identify, trust, and quote — the core of Answer Engine Optimization (AEO). It runs entirely in your browser; nothing you type is sent anywhere.</p>
+  </section>
+
+  <section>
+    <h2>Generate your llms.txt</h2>
+    <p class="lead">Fill in your site details and key pages. Everything happens locally in your browser.</p>
+
+    <div class="field">
+      <label for="site">Site name</label>
+      <input id="site" type="text" placeholder="Acme Deploy" autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="domain">Domain</label>
+      <input id="domain" type="text" placeholder="acmedeploy.com" autocomplete="off">
+      <p class="hint">Just the domain — we add <code class="k">https://</code> for you.</p>
+    </div>
+    <div class="field">
+      <label for="summary">One-line summary (what you do, for whom)</label>
+      <input id="summary" type="text" placeholder="Zero-config deployment for backend teams shipping containers." autocomplete="off">
+    </div>
+
+    <h3 style="margin-top:22px">Key pages</h3>
+    <p class="hint" style="margin-bottom:10px">Add your highest-value pages: docs, pricing, comparisons, integrations, FAQs, about. Path can be a slug (<code class="k">/pricing/</code>) or a full URL.</p>
+    <div id="pages"></div>
+    <p><button class="btn alt" type="button" id="addrow">+ Add another page</button></p>
+
+    <p style="margin-top:16px"><button class="btn" type="button" id="gen">Generate llms.txt</button></p>
+
+    <div id="out">
+      <h3>Your llms.txt</h3>
+      <p class="hint">Copy it, or download and upload it to your site root so it lives at <code class="k">/llms.txt</code>.</p>
+      <textarea id="result" readonly aria-label="Generated llms.txt content"></textarea>
+      <div class="toolbar">
+        <button class="btn" type="button" id="copy">Copy to clipboard</button>
+        <button class="btn alt" type="button" id="download">Download llms.txt</button>
+      </div>
+      <p class="hint" id="copied" style="display:none;color:var(--ok);font-weight:600">Copied.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where to put it (3 steps)</h2>
+    <div class="grid three">
+      <div class="card"><span class="tag">1</span><h3>Save the file</h3><p class="muted">Download the generated file as <code class="k">llms.txt</code> (plain text, UTF-8).</p></div>
+      <div class="card"><span class="tag">2</span><h3>Upload to root</h3><p class="muted">Place it at your domain root so it resolves at <code class="k">https://yourdomain.com/llms.txt</code>.</p></div>
+      <div class="card"><span class="tag">3</span><h3>Verify &amp; iterate</h3><p class="muted">Open the URL to confirm it loads, then keep it updated as you add key pages.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>This is one piece of the puzzle</h2>
+    <p class="lead">llms.txt helps AI engines understand you — but getting <em>recommended</em> also needs crawler access, structured data, extractable content, and third-party citations. Want to know where ChatGPT, Perplexity, and Gemini already recommend your competitors and not you? <a href="https://clearcited.com/free-teardown/">Get a free AI-visibility teardown</a> — a 2-minute video plus a 1-pager with three fixes you keep. Or <a href="https://clearcited.com/schema-generator/">generate AI-ready JSON-LD</a> next.</p>
+    <div class="band"><strong>Want it measured and done for you?</strong><br>We fix the SEO + AI foundation and produce the content end-to-end.<br><br><a class="btn" href="https://clearcited.com/free-teardown/">Get a free teardown</a> <a class="btn alt" href="https://clearcited.com/pricing/">See pricing</a></div>
+  </section>
+
+  <section>
+    <h2>Get the full Developer-Tool AEO checklist</h2>
+    <p class="lead">Drop your email and we'll send the 25-point checklist plus one practical AEO tip a week. No spam, unsubscribe anytime.</p>
+    <form action="" method="POST" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px" onsubmit="if(!this.getAttribute('action')){var d=[];Array.prototype.slice.call(this.elements).forEach(function(x){if(x.name)d.push(x.name+': '+x.value)});location.href='mailto:hello@clearcited.com?subject=Send%20me%20the%20AEO%20checklist&body='+encodeURIComponent(d.join(String.fromCharCode(10)));return false;}">
+      <!-- Deploy: set action="FORM_ENDPOINT" (Tally, Formspark, MailerLite, or your CRM). Empty action falls back to a mailto so it never silently fails. -->
+      <input type="hidden" name="lead_magnet" value="llms-txt-generator">
+      <input type="email" name="email" placeholder="you@company.com" required aria-label="Work email" style="padding:13px;border:1px solid var(--line);border-radius:9px;min-width:280px">
+      <button class="btn" type="submit">Send me the checklist</button>
+    </form>
+    <p class="small" style="margin-top:10px">Double opt-in. <a href="https://clearcited.com/privacy/">Privacy</a>.</p>
+  </section>
+
+  <section class="cc-faq">
+    <h2>Frequently asked questions</h2>
+    <details><summary><strong>What is llms.txt?</strong></summary><p class="lead">A plain Markdown file at your site root (<code class="k">yoursite.com/llms.txt</code>) that tells AI crawlers what your site is and points to your most important pages, so models can understand and cite you accurately instead of guessing from raw HTML.</p></details>
+    <details><summary><strong>Why does llms.txt matter for AEO?</strong></summary><p class="lead">AEO is about being understood and cited by AI answer engines. An llms.txt gives ChatGPT, Perplexity, Gemini, and Google AI a curated, machine-readable map of your best pages and a clean description of your entity — making you easier to identify, trust, and quote.</p></details>
+    <details><summary><strong>Where do I put the file?</strong></summary><p class="lead">Upload it to the root of your domain so it is reachable at <code class="k">https://yourdomain.com/llms.txt</code>. It is a static text file, so it works on any host with no backend.</p></details>
+    <details><summary><strong>Does it replace robots.txt or a sitemap?</strong></summary><p class="lead">No. robots.txt controls crawler access, the XML sitemap lists every URL, and llms.txt summarizes your most important pages and what your site is. Use all three together.</p></details>
+    <details><summary><strong>Will this guarantee AI engines cite me?</strong></summary><p class="lead">No. llms.txt helps AI understand you, but citations also depend on crawler access, structured data, clear content, and third-party mentions. It is one important piece of a full AEO and SEO foundation. <a href="https://clearcited.com/what-is-aeo/">Learn how AEO works →</a></p></details>
+  </section>
+
+  <section>
+    <h2>More free tools</h2>
+    <div class="grid">
+      <div class="card"><span class="tag">Generator</span><h3><a href="https://clearcited.com/schema-generator/">JSON-LD Schema Generator</a></h3><p class="muted">Create valid Organization, Product, and FAQ structured data for AI and search.</p></div>
+      <div class="card"><span class="tag">Quiz</span><h3><a href="https://clearcited.com/scorecard/">AI Visibility Scorecard</a></h3><p class="muted">Ten questions → a readiness score and exactly what to fix.</p></div>
+      <div class="card"><span class="tag">Checklist</span><h3><a href="https://clearcited.com/ai-seo-checklist/">AI + SEO Readiness Checklist</a></h3><p class="muted">An interactive, downloadable combined AI and SEO readiness checklist with a score.</p></div>
+      <div class="card"><span class="tag">Free</span><h3><a href="https://clearcited.com/free-tools/">All free tools</a></h3><p class="muted">Browse every free Clear Cited tool, checklist, and resource.</p></div>
+    </div>
+  </section>
+</main>
+<footer class="site"><div class="wrap" style="padding:22px 0"><p class="small muted">A free tool from <a href="https://clearcited.com/">Clear Cited</a> — AI search visibility (AEO/GEO) for B2B SaaS &amp; developer tools. We measure where ChatGPT, Perplexity, Claude, Gemini &amp; Google AI cite you vs competitors. &middot; <a href="https://clearcited.com/free-teardown/">Get a free teardown</a> &middot; <a href="https://clearcited.com/ai-visibility-index/">AI Visibility Index</a></p><p class="small muted">Be the answer AI gives.</p></div></footer>
+<script src="app.js" defer></script>
+</body>
+</html>
