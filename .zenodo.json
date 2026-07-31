@@ -1,0 +1,25 @@
+{
+  "title": "llms-txt-generator: generate an llms.txt for AI crawlers",
+  "upload_type": "software",
+  "description": "<p>Generates an <code>llms.txt</code> (see llmstxt.org) — the Markdown file at a site root that tells AI crawlers what the site is and points them at its most important pages.</p><p>Two inputs: a local folder of built HTML, or a live sitemap.xml. Output is a title line, a one-line summary, and a linked, described page list.</p><p>Python standard library only, zero dependencies.</p>",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Adams, Logan",
+      "orcid": "REPLACE-WITH-YOUR-ORCID",
+      "affiliation": "Clear Cited"
+    }
+  ],
+  "keywords": [
+    "answer engine optimization",
+    "generative engine optimization",
+    "AI search",
+    "citation",
+    "structured data"
+  ],
+  "related_identifiers": [
+    { "identifier": "https://github.com/Clear-Cited/llms-txt-generator", "relation": "isSupplementTo", "scheme": "url" },
+    { "identifier": "https://clearcited.com/", "relation": "isSupplementTo", "scheme": "url" }
+  ]
+}
