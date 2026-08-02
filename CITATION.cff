@@ -1,8 +1,10 @@
-```yaml
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "llms-txt-generator"
 abstract: "Generates an llms.txt from a local HTML folder or a live sitemap."
+type: software
+version: "0.1.0"
+date-released: "2026-08-02"
 authors:
   - family-names: "Adams"
     given-names: "Logan"
@@ -11,15 +13,18 @@ authors:
 repository-code: "https://github.com/Clear-Cited/llms-txt-generator"
 url: "https://clearcited.com"
 license: MIT
-version: "1.0.0"
-date-released: "2026-07-27"
 keywords:
   - answer-engine-optimization
   - generative-engine-optimization
   - ai-search
   - large-language-models
-```
-swh:1:dir:c4c1d423857a0ca70ad765b6616a448695135dad;
-origin=https://github.com/Clear-Cited/llms-txt-generator;
-visit=swh:1:snp:10b3727929a86facf3275266838be1b2051d96ef;
-anchor=swh:1:rev:9995118e7f6c5b666fc735f827624c13f66e13eb
+identifiers:
+  - type: swh
+    value: "swh:1:dir:c4c1d423857a0ca70ad765b6616a448695135dad"
+    description: "Software Heritage directory for the llms-txt-generator repository"
+  - type: swh
+    value: "swh:1:snp:10b3727929a86facf3275266838be1b2051d96ef"
+    description: "Software Heritage snapshot"
+  - type: swh
+    value: "swh:1:rev:9995118e7f6c5b666fc735f827624c13f66e13eb"
+    description: "Software Heritage revision"
